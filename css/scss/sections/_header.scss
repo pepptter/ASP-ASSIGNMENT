@@ -7,6 +7,9 @@ header {
     grid-template-columns: 1fr auto;
     grid-template-areas: "logo mobile";
     gap: 40px;
+    a{
+          @include text-m;
+    }
 
     @include lg {
       grid-template-columns: auto 1fr auto auto;
@@ -52,9 +55,9 @@ header {
 
     .btn-mobile {
       grid-area: mobile;
-      display: block;
+      display: flex;
 
-      @include lg {
+      @include md {
         display: none;
       }
     }

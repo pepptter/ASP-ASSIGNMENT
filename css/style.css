@@ -393,6 +393,13 @@ header .container {
   grid-template-areas: "logo mobile";
   gap: 40px;
 }
+header .container a {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px !important;
+}
 @media (min-width: 992px) {
   header .container {
     grid-template-columns: auto 1fr auto auto;
@@ -436,9 +443,9 @@ header .container .account-buttons {
 }
 header .container .btn-mobile {
   grid-area: mobile;
-  display: block;
+  display: flex;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   header .container .btn-mobile {
     display: none;
   }
@@ -465,6 +472,7 @@ footer .container .social-media {
 }
 
 .showcase-section {
+  min-height: 80vh;
   position: relative;
   margin-bottom: 80px;
 }
@@ -572,6 +580,7 @@ footer .container .social-media {
 }
 
 .features-section {
+  min-height: 80vh;
   background: #F3F6FF;
   padding: 80px 0;
 }
@@ -645,4 +654,312 @@ footer .container .social-media {
   color: #565973;
   font-family: "Manrope", sans-serif;
   font-size: 16px !important;
+}
+
+.switchbetweenmodes-section .darkandlight {
+  background: linear-gradient(to right, #0B0F19 50%, white 50%);
+  padding: 40px 0 120px 0;
+}
+.switchbetweenmodes-section .darkandlight .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.switchbetweenmodes-section .darkandlight .container .text-box {
+  margin: 70px 0 70px 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.switchbetweenmodes-section .darkandlight .container .text-box .light-text,
+.switchbetweenmodes-section .darkandlight .container .text-box .dark-text {
+  flex: 0 0 50%;
+  display: flex;
+}
+.switchbetweenmodes-section .darkandlight .container .text-box h1 {
+  margin: 0;
+}
+.switchbetweenmodes-section .darkandlight .container .light-text {
+  justify-content: end;
+  padding-right: 4px;
+}
+.switchbetweenmodes-section .darkandlight .container .light-text h1 {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px !important;
+  color: white;
+}
+@media (min-width: 992px) {
+  .switchbetweenmodes-section .darkandlight .container .light-text {
+    padding-right: 8px;
+  }
+  .switchbetweenmodes-section .darkandlight .container .light-text h1 {
+    line-height: 160%;
+    font-weight: 400;
+    color: #565973;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    color: #0B0F19;
+    font-size: 40px !important;
+    color: white;
+  }
+}
+.switchbetweenmodes-section .darkandlight .dark-text {
+  justify-content: start;
+  padding-left: 2px;
+}
+.switchbetweenmodes-section .darkandlight .dark-text h1 {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px !important;
+  color: #0B0F19;
+}
+@media (min-width: 992px) {
+  .switchbetweenmodes-section .darkandlight .dark-text {
+    padding-left: 4px;
+  }
+  .switchbetweenmodes-section .darkandlight .dark-text h1 {
+    line-height: 160%;
+    font-weight: 400;
+    color: #565973;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    color: #0B0F19;
+    font-size: 40px !important;
+  }
+}
+.switchbetweenmodes-section .darkandlight img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .switchbetweenmodes-section .darkandlight img {
+    width: 100%;
+  }
+}
+
+.manageyourwork-section {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.manageyourwork-section .container {
+  display: block;
+}
+@media (min-width: 992px) {
+  .manageyourwork-section .container {
+    display: flex;
+  }
+}
+.manageyourwork-section .container img {
+  max-width: 100%;
+}
+@media (min-width: 992px) {
+  .manageyourwork-section .container img {
+    width: 55%;
+  }
+}
+.manageyourwork-section .container .text-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.manageyourwork-section .container .text-section .text-gap {
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .manageyourwork-section .container .text-section h1 {
+    line-height: 160%;
+    font-weight: 400;
+    color: #565973;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    color: #0B0F19;
+    font-size: 48px !important;
+  }
+}
+@media (min-width: 992px) {
+  .manageyourwork-section .container .text-section {
+    text-align: left;
+    justify-content: center;
+    margin-left: 10%;
+  }
+  .manageyourwork-section .container .text-section h1 {
+    line-height: 160%;
+    font-weight: 400;
+    color: #565973;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    color: #0B0F19;
+    font-size: 32px !important;
+  }
+}
+@media (min-width: 768px) {
+  .manageyourwork-section .container .text-section .text-flex {
+    margin-left: 25%;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  .manageyourwork-section .container .text-section .text-flex {
+    margin-left: 0px;
+  }
+}
+.manageyourwork-section .container .text-section .text-flex p {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px !important;
+}
+@media (min-width: 768px) {
+  .manageyourwork-section .container .text-section .text-flex p {
+    line-height: 160%;
+    font-weight: 400;
+    color: #565973;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px !important;
+  }
+}
+.manageyourwork-section .container .text-section .button-flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+@media (min-width: 992px) {
+  .manageyourwork-section .container .text-section .button-flex {
+    justify-content: start;
+  }
+}
+.manageyourwork-section .container .text-section .button-flex .btn-theme-s {
+  width: 159px;
+}
+@media (min-width: 768px) {
+  .manageyourwork-section .container .text-section .button-flex .btn-theme-s {
+    width: 300px;
+    height: 70px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .manageyourwork-section .container .text-section .button-flex .btn-theme-s {
+    width: 159px;
+    height: 44px;
+    font-size: 14px;
+  }
+}
+
+.downloadourapp-section {
+  background-color: #F3F6FF;
+  padding: 7px 0;
+}
+.downloadourapp-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 53px 0;
+  background-color: #EFF2FC;
+}
+@media (min-width: 768px) {
+  .downloadourapp-section .container {
+    flex-direction: row;
+  }
+}
+.downloadourapp-section .container img {
+  max-width: 100%;
+}
+.downloadourapp-section .container .text-and-buttons-box {
+  margin-top: 30px;
+}
+.downloadourapp-section .container .text-and-buttons-box p {
+  margin-bottom: 0px;
+}
+.downloadourapp-section .container .text-and-buttons-box h2 {
+  margin-bottom: 0;
+}
+.downloadourapp-section .container .text-and-buttons-box .app-image {
+  margin-top: 10px;
+}
+.downloadourapp-section .container .text-and-buttons-box .app-store {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #D4D7E5;
+}
+@media (min-width: 768px) {
+  .downloadourapp-section .container .text-and-buttons-box .app-store {
+    border-bottom: 0;
+  }
+}
+.downloadourapp-section .container .text-and-buttons-box .google-play {
+  padding-top: 25px;
+}
+@media (min-width: 768px) {
+  .downloadourapp-section .container .text-and-buttons-box {
+    margin-top: 0;
+  }
+  .downloadourapp-section .container .text-and-buttons-box h1 {
+    line-height: 160%;
+    font-weight: 400;
+    color: #565973;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    color: #0B0F19;
+    font-size: 32px !important;
+  }
+  .downloadourapp-section .container .text-and-buttons-box h2 {
+    line-height: 160%;
+    font-weight: 400;
+    color: #565973;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    color: #0B0F19;
+    font-size: 24px !important;
+  }
+}
+@media (min-width: 992px) {
+  .downloadourapp-section .container .text-and-buttons-box {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .downloadourapp-section .container .text-and-buttons-box h1 {
+    text-align: left;
+    width: 416px;
+    line-height: 160%;
+    font-weight: 400;
+    color: #565973;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    color: #0B0F19;
+    font-size: 40px !important;
+  }
+  .downloadourapp-section .container .text-and-buttons-box .app-formating .app-store-stars {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+  }
+  .downloadourapp-section .container .text-and-buttons-box .app-formating .app-store-stars .stars {
+    display: flex;
+    flex-direction: row;
+    width: 14px;
+  }
+  .downloadourapp-section .container .text-and-buttons-box .rating-download {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+  }
+  .downloadourapp-section .container .text-and-buttons-box .rating-download .app-image {
+    flex-direction: row;
+  }
 }
