@@ -3,3 +3,4 @@ inloggad header responsive och alt lägen
 flytta pilen i categories dropdown meny
 bookmark knapp fler lägen? bild just nu, göra om till cirkel med ikon som ändras?
 antal per sida på mobil och tablet?
+header på andra sidor och responsiviteter, switch? osv

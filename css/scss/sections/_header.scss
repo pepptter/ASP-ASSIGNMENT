@@ -10,27 +10,31 @@ header {
     a{
           @include text-m;
     }
-
+    @include md{
+      grid-template-columns: auto 1fr auto ;
+      grid-template-areas: "logo menu buttons ";
+    }
     @include lg {
       grid-template-columns: auto 1fr auto auto;
       grid-template-areas: "logo menu switch buttons";
     }
 
-    #logo {
+    .logo {
       grid-area: logo;
     }
 
-    #menu {
+    .menu {
       grid-area: menu;
       display: none;
 
-      @include lg {
+
+      @include md {
         display: block;
       }
 
       nav {
         display: flex;
-        gap: 15px;
+        gap: 25px;
       }
     }
 
@@ -48,8 +52,18 @@ header {
       display: none;
       gap: 15px;
 
-      @include lg {
+      .btn-theme{
+        color: white;
+      }
+      @include md {
         display: flex;
+      }
+    }
+    .account-image{
+      grid-area: buttons;
+      display: none;
+      @include md{
+        display: block;
       }
     }
 
